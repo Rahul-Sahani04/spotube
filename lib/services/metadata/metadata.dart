@@ -50,6 +50,7 @@ class MetadataPlugin {
         sharedPreferences,
         config.slug,
       ),
+      createYoutubeEngine: () => throw UnimplementedError(),
       onNavigatorPush: (route) {
         return rootNavigatorKey.currentContext?.router
             .pushWidget(Builder(builder: (context) {
